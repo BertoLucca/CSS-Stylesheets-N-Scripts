@@ -1,2 +1,2 @@
 let h = document.getElementByID("surn");
-alert(h.text);
+console.log(h.text);
