@@ -9,6 +9,10 @@
   hyphens: auto;
 }
 
+.phb img {
+  user-select: none;
+}
+
 .phb strong {
   font-size: 12.3px;
 }
@@ -50,26 +54,29 @@
   margin-top: 0px;
 }
 
-blockquote blockquote:only-child {
-  /* Syntax for double >> quotes, leads to grey background */
-  background-color: lightgray;
-  box-shadow: none;
-  margin: -16px;
-}
+/* --Double >> quotes definition BEGIN-- */
+  blockquote blockquote:only-child {
+    /* Syntax for double >> quotes, leads to grey background */
+    background-color: lightgray;
+    box-shadow: none;
+    margin: -16px;
+  }
 
-blockquote blockquote:only-child tbody tr:nth-child(even) {
-  background-color: #fff5;
-}
+  blockquote blockquote:only-child tbody tr:nth-child(even) {
+    background-color: #fff5;
+  }
 
-blockquote blockquote:only-child tbody tr:nth-child(odd) {
-  background-color: #fff9;
-}
+  blockquote blockquote:only-child tbody tr:nth-child(odd) {
+    background-color: #fff9;
+  }
+/* --END-- */
 
 /* --Fancy chapter leading paragraphs BEGIN-- */
-  /* Use note:  A single *** line followed by a paragraph stands for a no-capital letter leading paragraph. */
+  /* Use note:  A single *** line followed by a paragraph stands for a no-capital
+  letter leading paragraph. */
   .phb h1 + hr ~ p:not(hr:nth-of-type(2) ~ p),
   .phb h1 + hr + hr ~ p:not(hr:nth-of-type(3) ~ p) {
-    font-family: MrEaves XL Sans;
+    font-family: 'MrEaves XL Sans';
     font-weight: bold;
   }
 
@@ -80,7 +87,7 @@ blockquote blockquote:only-child tbody tr:nth-child(odd) {
 
   .phb h1 + hr + hr + p::first-line,
   .phb h1 + hr + p::first-line{
-    font-family: BookSanity;
+    font-family: 'BookSanity';
     font-size: 1.1em;
     font-variant: small-caps;
     font-weight: normal;
@@ -90,7 +97,7 @@ blockquote blockquote:only-child tbody tr:nth-child(odd) {
   .phb h1 + hr + hr + p::first-letter {
     color: #58180D;
     float: left;
-    font-family: Solberry;
+    font-family: 'Solberry';
     font-size: 9.27em;
     font-weight: normal;
     line-height: .8em;
@@ -104,7 +111,7 @@ blockquote blockquote:only-child tbody tr:nth-child(odd) {
     all: unset;
     color: black;
     float: right;
-    font-family: BookSanity;
+    font-family: 'BookSanity';
     font-size: 0.317cm;
     font-weight: normal;
     margin-left: 1px;
@@ -129,7 +136,7 @@ blockquote blockquote:only-child tbody tr:nth-child(odd) {
   }
 
   .toc li a:after {
-    font-family: BookSanity;
+    font-family: 'BookSanity';
     font-size: 0.317cm;
     font-weight: normal;
     content: " ........................................"
@@ -215,8 +222,27 @@ blockquote blockquote:only-child tbody tr:nth-child(odd) {
     display: none;
   }
 
-  #p1 * {
+  #p1 img {
     position: absolute;
+  }
+
+  #p1 p:last-child {
+    --shadow-x0: #000 0px 0px 3px;
+    --shadow-x1: var(--shadow-x0), var(--shadow-x0), var(--shadow-x0);
+    --shadow-x2: var(--shadow-x1), var(--shadow-x1), var(--shadow-x1);
+    text-shadow: var(--shadow-x2), var(--shadow-x2), var(--shadow-x2);
+
+    bottom: 30px;
+    color: white;
+    font-family: 'VeraCruz';
+    font-size: 25px;
+    left: 0px;
+    letter-spacing: 1.5px;
+    position: absolute;
+    text-align: center;
+    text-indent: 0px;
+    user-select: none;
+    width: 100%;
   }
 
   #eventos-em-surn + table * {
