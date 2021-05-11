@@ -215,7 +215,7 @@ blockquote blockquote:only-child tbody tr:nth-child(odd) {
     display: none;
   }
 
-  #p1 img {
+  #p1 * {
     position: absolute;
   }
 
