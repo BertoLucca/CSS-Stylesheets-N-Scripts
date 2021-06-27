@@ -5,6 +5,7 @@
 	text-align: center;
 	text-transform: uppercase;
 	top: 0;
+	padding: 89px 0 0 0;
 	user-select: none;
 	width: 100%;
 }
@@ -19,7 +20,7 @@
 	text-shadow: var(--shadow-x3), var(--shadow-x3), var(--shadow-x3);
   color: white;
 	font-size: 6.8em;
-	padding: 89px 0 0 0;
+	padding: 0;
 	margin: 0;
 	letter-spacing: -3px;
 	-webkit-text-stroke: 2px black;
