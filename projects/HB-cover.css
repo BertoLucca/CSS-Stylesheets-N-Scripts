@@ -8,16 +8,16 @@
 	padding: 89px 0 0 0;
 	user-select: none;
 	width: 100%;
-	color: white;
 }
 
 .phb .cover-page-text h1 {
-  -webkit-text-stroke: 2px black;
-  --shadow-x0: #000 0px 0px 3px;
+	-webkit-text-stroke: 2px black;
+	--shadow-x0: #000 0px 0px 3px;
 	--shadow-x1: var(--shadow-x0), var(--shadow-x0), var(--shadow-x0);
 	--shadow-x2: var(--shadow-x1), var(--shadow-x1), var(--shadow-x1);
 	--shadow-x3: var(--shadow-x2), var(--shadow-x2), var(--shadow-x2);
 	text-shadow: var(--shadow-x3), var(--shadow-x3), var(--shadow-x3);
+	color: white;
 	font-family: "Nodesto";
 	font-weight: normal;
 	font-size: 6.8em;
@@ -31,6 +31,7 @@
 	--shadow-x1: var(--shadow-x0), var(--shadow-x0), var(--shadow-x0);
 	--shadow-x2: var(--shadow-x1), var(--shadow-x1), var(--shadow-x1);
 	text-shadow: var(--shadow-x2), var(--shadow-x2), #000 0px 0px 10px, #000 0px 0px 10px;
+	color: white;
 	font-family: "Nodesto";
 	font-weight: normal;
 	letter-spacing: -0.05em;
@@ -44,6 +45,7 @@
 	--shadow-x1: var(--shadow-x0), var(--shadow-x0), var(--shadow-x0);
 	--shadow-x2: var(--shadow-x1), var(--shadow-x1), var(--shadow-x1);
 	text-shadow: var(--shadow-x2), var(--shadow-x2), var(--shadow-x2);
+	color: white;
 	font-family: 'VeraCruz';
 	letter-spacing: 5px;
 	font-size: 30px;
@@ -56,6 +58,7 @@
 	--shadow-x1: var(--shadow-x0), var(--shadow-x0), var(--shadow-x0);
 	--shadow-x2: var(--shadow-x1), var(--shadow-x1), var(--shadow-x1);
 	text-shadow: var(--shadow-x2), var(--shadow-x2), var(--shadow-x2);
+	color: white;
 	bottom: 2.2em;
 	font-family: 'VeraCruz';
 	font-size: 1.45em;
