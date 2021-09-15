@@ -1,4 +1,4 @@
-.phb .cover-page-text {
+.page .cover-page-text {
 	height: 100%;
 	left: 0;
 	position: absolute;
@@ -10,7 +10,7 @@
 	width: 100%;
 }
 
-.phb .cover-page-text h1 {
+.page .cover-page-text h1 {
 	-webkit-text-stroke: 2px black;
 	--shadow-x0: #000 0px 0px 3px;
 	--shadow-x1: var(--shadow-x0), var(--shadow-x0), var(--shadow-x0);
